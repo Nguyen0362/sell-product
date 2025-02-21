@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../backEnd"
+		},
+		{
+			"path": "../../../../../hoc-wed"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "frontEnd"
+	}
+}

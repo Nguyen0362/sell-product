@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+  <body> 
+    <header class="header"> 
+      <div>
+        <div>
+          <div class="custom-container mx-auto">
+            <div class="flex justify-between border-b pt-[9px] pb-[6px] ">
+              <div class="flex ">
+                <p class="text-[14px] font-[400] text-[#4A4A4A] pr-[8px]"><span>Call us: </span><a href="#">+1 25123658</a></p>
+                <p class="text-[14px] font-[400] text-[#4A4A4A] sm:block hidden"><span>Email: </span><a href="#">info@gmail.com</a></p>
+              </div>
+              <nav class="lg:block hidden"> 
+                <ul class="flex"> 
+                  <li class="text-[14px] font-[400] text-[#4A4A4A] mr-[10px] pr-[10px] relative after:content-[''] after:absolute after:w-[1px] after:h-[10px] after:bg-[#4A4A4A] after:right-[0] after:top-[50%] after:tranform after:translate-y-[-50%]"> <a href="#">Trợ giúp & Liên hệ</a></li>
+                  <li class="text-[14px] font-[400] text-[#4A4A4A]"> <a href="#">Trạng thái đơn hàng</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="py-[12px] lg:block hidden">
+          <div class="custom-container mx-auto">
+            <div class="flex items-center">
+              <div class="w-[17%] pr-[12px]"><a href="#"><img src="assets/images/logo-6.png" alt=""></a></div>
+              <div class="flex justify-between items-center flex-1 pl-[12px]">
+                <div class="flex items-center">
+                  <ul class="mr-[24px]"> 
+                    <li class="menubar cursor-pointer"> <span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"> </span><span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"></span><span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"> </span></li>
+                  </ul>
+                  <div class="min-w-[500px] h-[55px] rounded-[5px] pl-[15px] bg-[#f6f6f6] relative"> 
+                    <form action="#">
+                      <div class="flex"> 
+                        <input class="outline-none w-[100%] h-[49px] bg-transparent" type="text" placeholder="Tìm kiếm sản phẩm"><span class="flex items-center justify-center h-[53px] w-[53px] rounded-[5px] text-white text-[18px] bg-[#139227] absolute right-[0]"> <i class="fa-solid fa-magnifying-glass"></i></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div> 
+                  <ul class="flex"> 
+                    <li> <a class="text-[14px] text-[#4A4A4A]" href="#">Nâng cao </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-menu bg-[#206c2c] lg:block hidden">
+          <div class="custom-container mx-auto relative">
+            <div class="flex justify-between items-center"> 
+              <nav>
+                <ul class="flex"> 
+                  <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Trang chủ</span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 01 <sup class="bg-[#FF033E] text-[10px] text-white font-[400] pb-[1px] px-[4px] rounded-[2px] ml-[10px] leading-[1.5]">Popular</sup></a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 01 <sup class="bg-[#F69C63] text-[10px] text-white font-[400] pb-[1px] px-[4px] rounded-[2px] ml-[10px] leading-[1.5]">Hot</sup></a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 03 </a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 04 </a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Cửa hàng </span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Grid1 </a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Grid Left Sidebar</a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop List Left Sidebar </a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop List Left Sidebar </a></li>
+                      <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span>Shop Details Style</span><span> <i class="fa-solid fa-angle-right"></i></span></a>
+                        <ul class="py-[12px] px-[20px] bg-white absolute left-[calc(100%+20px)] top-[0] w-[240px] z-[99] opacity-0 tranform translate-y-[10px] invisible transition-all duration-300 ease-in-out">
+                          <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Details Style 01</a></li>
+                          <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Details Style 02</a></li>
+                          <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Details Style 03</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu group"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Đặc trưng  </span><span> <i class="fa-solid fa-angle-down">      </i></span></a>
+                    <ul class="w-[1140px] bg-white absolute top-[100%] left-[50%] [transform:translateX(-50%)_translateY(10px)!important] z-[99] opacity-0 invisible group-hover:[transform:translateX(-50%)_translateY(0)!important] transition-all duration-300 ease-in-out"> 
+                      <div class="flex">
+                        <div class="w-[58%] bg-white py-[20px] pr-[5px] pl-[20px] grid grid-cols-3"> 
+                          <div class="pl-[17px]">
+                            <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Trang chủ</h6>
+                            <ul> 
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 01</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 02</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 03</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 04</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 05</a></li>
+                            </ul>
+                          </div>
+                          <div class="pl-[17px] border-l">
+                            <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Trang cửa hàng</h6>
+                            <ul> 
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Lưới cửa hàng</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Danh sách cửa hàng</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Cửa hàng Lưới thanh bên trái</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Cửa hàng Lưới thanh bên phải</a></li>
+                            </ul>
+                          </div>
+                          <div class="pl-[17px] border-l">
+                            <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Trang khác </h6>
+                            <ul> 
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Cửa hàng </a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> So sánh</a></li>
+                              <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Yêu thích </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flex w-[42%] bg-[#FAFAFA] p-[20px]"> 
+                          <div class="w-[100%]"><a href="#"> <img src="assets/images/product-11.png" alt="">
+                              <h6 class="pb-[4px] mt-[23px] text-[16px] text-black uppercase font-[600]">Ladies dresses </h6><span class="text-[14px] text-[#74787c]">6.000.000đ </span></a></div>
+                          <div class="w-[58%] pl-[40px]">
+                            <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Giảm giá</h6>
+                            <ul> 
+                              <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                              <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                              <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                              <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Blogs</span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Tất cả các bài đăng trên blog </a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Chi tiết blog</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Trang </span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Trang chúng tôi</a></li>
+                      <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Liên hệ</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Giới thiệu                        </span></a></li>
+                </ul>
+              </nav>
+              <ul class="flex">
+                <li class="pr-[14px]"> <a class="text-[16px] text-white font-[700]" href="#">
+                     <i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li class="pr-[14px] text-[16px] text-white font-[700]"> <a href="#">
+                     <i class="fa-regular fa-heart"></i></a></li>
+                <li> <a class="text-[16px] text-white font-[700]" href="#">
+                     <i class="fa-regular fa-user"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu lg:hidden block">
+          <div class="py-[10px]">
+            <div class="custom-container mx-auto">
+              <div class="flex justify-between items-center"> 
+                <ul class="mr-[24px]"> 
+                  <li class="menubar cursor-pointer"> <span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"> </span><span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"></span><span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"></span></li>
+                </ul>
+                <div> <a href="#"><img src="assets/images/logo-6.png" alt="" srcset=""></a></div>
+                <div> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-closer sidebar-content h-[100vh] bg-[rgba(0,0,0,0.5)] fixed top-0 right-0 z-[99999] w-0 transition-all duration-700 ease-in-out"> </div>
+          <div class="mobile-menu__sidebar-menu sidebarMenu h-[100vh] w-[300px] bg-white fixed top-0 left-0 z-[99999] translate-x-[-100%] overflow-y-scroll transition-all duration-700 ease-in-out"> 
+            <div class="w-[100%] bg-white flex justify-between items-center py-[10px] px-[20px]"><span class="text-[16px] text-black">Close Menu </span><span class="cross text-[16px] text-black close-side-widget"><i class="fa-solid fa-xmark"></i></span></div>
+            <div class="w-[100%]">
+              <form action="#">
+                <div class="relative">
+                  <input class="outline-none w-[100%] h-[49px] py-[20px] pr-[60px] pl-[20px] text-[#555555] border" type="text" placeholder="Tìm kiếm sản phẩm"><span class="text-[18px] text-[#555555] font-[600] cursor-pointer absolute top-[52%] right-[20px] translate-y-[-50%]"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+              </form>
+            </div>
+            <ul class="pages-dropdown-menu">
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Home </span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i> </span></a>
+                <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Home page 01</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Home page 01</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Home page 01</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Home page 01</span></a></li>
+                </ul>
+              </li>
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop </span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i> </span></a>
+                <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                  <li class="subhed"> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop details styles</span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                    </ul>
+                  </li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                </ul>
+              </li>
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Features </span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i> </span></a>
+                <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                  <li class="subhed"> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Category</span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="subhed"> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Category</span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="subhed"> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Category</span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip     </span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Pages </span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i> </span></a>
+                <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                  <li class="subhed"> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop details styles</span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                    </ul>
+                  </li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                </ul>
+              </li>
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Contact </span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i> </span></a>
+                <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                  <li class="subhed"> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop details styles</span><span class="menuarrow transition-all duration-300 ease-in-out"><i class="fa-solid fa-angle-right"></i></span></a>
+                    <ul class="dropdown hidden transition-all duration-300 ease-in-out overflow-hidden">
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                      <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                    </ul>
+                  </li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                  <li> <a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Shop grip</span></a></li>
+                </ul>
+              </li>
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Login</span></a></li>
+              <li class="relative"><a class="flex justify-between items-center text-[black] text-[17px] font-[600] py-[5px] px-[20px] uppercase leading-[50px] border-b" href="#"> <span>Resgister</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sticy-header w-[100%] fixed top-0 left-0 z-[9999] opacity-0 invisible transition-all duration-500 ease-in-out">
+        <div> 
+          <div class="bg-white">
+            <div class="custom-container mx-auto">
+              <div class="flex justify-between border-b border-[#e4e6e9] pt-[9px] pb-[6px]">
+                <div class="flex ">
+                  <p class="text-[14px] font-[400] text-[#4A4A4A] pr-[8px]"><span>Call us: </span><a href="#">+1 25123658</a></p>
+                  <p class="text-[14px] font-[400] text-[#4A4A4A] sm:block hidden"><span>Email: </span><a href="#">info@gmail.com</a></p>
+                </div>
+                <nav class="lg:block hidden"> 
+                  <ul class="flex"> 
+                    <li class="text-[14px] font-[400] text-[#4A4A4A] mr-[10px] pr-[10px] relative after:content-[''] after:absolute after:w-[1px] after:h-[10px] after:bg-[#4A4A4A] after:right-[0] after:top-[50%] after:tranform after:translate-y-[-50%]"> <a href="#">Trợ giúp & Liên hệ</a></li>
+                    <li class="text-[14px] font-[400] text-[#4A4A4A]"> <a href="#">Trạng thái đơn hàng</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu bg-[#206c2c] lg:block hidden">
+            <div class="custom-container relative">
+              <div class="flex justify-between items-center"> <a href="#"><img src="assets/images/logo-white.png" alt="" srcset=""></a>
+                <nav>
+                  <ul class="flex"> 
+                    <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Trang chủ</span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                      <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 01 <sup class="bg-[#FF033E] text-[10px] text-white font-[400] pb-[1px] px-[4px] rounded-[2px] ml-[10px] leading-[1.5]">Popular</sup></a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 01 <sup class="bg-[#F69C63] text-[10px] text-white font-[400] pb-[1px] px-[4px] rounded-[2px] ml-[10px] leading-[1.5]">Hot</sup></a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 03 </a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Home Page 04 </a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Cửa hàng </span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                      <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Grid1 </a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Grid Left Sidebar</a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop List Left Sidebar </a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop List Left Sidebar </a></li>
+                        <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span>Shop Details Style</span><span> <i class="fa-solid fa-angle-right"></i></span></a>
+                          <ul class="py-[12px] px-[20px] bg-white absolute left-[calc(100%+20px)] top-[0] w-[240px] z-[99] opacity-0 tranform translate-y-[10px] invisible transition-all duration-300 ease-in-out">
+                            <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Details Style 01</a></li>
+                            <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Details Style 02</a></li>
+                            <li class="relative"><a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Shop Details Style 03</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu group"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Đặc trưng  </span><span> <i class="fa-solid fa-angle-down">      </i></span></a>
+                      <ul class="w-[1140px] absolute top-[100%] left-[50%] [transform:translateX(-50%)_translateY(10px)!important] z-[99] opacity-0 invisible group-hover:[transform:translateX(-50%)_translateY(0)!important] transition-all duration-300 ease-in-out"> 
+                        <div class="flex">
+                          <div class="w-[58%] bg-white py-[20px] pr-[5px] pl-[20px] grid grid-cols-3"> 
+                            <div class="pl-[17px]">
+                              <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Trang chủ</h6>
+                              <ul> 
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 01</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 02</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 03</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 04</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Trang chủ 05</a></li>
+                              </ul>
+                            </div>
+                            <div class="pl-[17px] border-l">
+                              <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Trang cửa hàng</h6>
+                              <ul> 
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Lưới cửa hàng</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Danh sách cửa hàng</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Cửa hàng Lưới thanh bên trái</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Cửa hàng Lưới thanh bên phải</a></li>
+                              </ul>
+                            </div>
+                            <div class="pl-[17px] border-l">
+                              <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Trang khác </h6>
+                              <ul> 
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Cửa hàng </a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> So sánh</a></li>
+                                <li> <a class="flex items-center justify-between py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> Yêu thích </a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="flex w-[42%] bg-[#FAFAFA] p-[20px]"> 
+                            <div class="w-[100%]"><a href="#"> <img src="assets/images/product-11.png" alt="">
+                                <h6 class="pb-[4px] mt-[23px] text-[16px] text-black uppercase font-[600]">Ladies dresses </h6><span class="text-[14px] text-[#74787c]">6.000.000đ </span></a></div>
+                            <div class="w-[58%] pl-[40px]">
+                              <h6 class="uppercase pb-[8px] text-[18px] font-[600] text-black">Giảm giá</h6>
+                              <ul> 
+                                <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                                <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                                <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                                <li> <a class="flex py-[12px] text-[15px] leading-[1.5] text-black border-t hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#"> <span class="text-[18px] mr-[10px] text-black mt-[-4px]">%</span>30% tất cả mọi thứ</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Blogs</span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                      <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Tất cả các bài đăng trên blog </a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Chi tiết blog</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Trang </span><span> <i class="fa-solid fa-angle-down"></i></span></a>
+                      <ul class="py-[12px] px-[20px] bg-white w-[240px] absolute top-[100%] z-[99] opacity-0 tranform translate-y-[10px] transition-all duration-300 ease-in-out invisible">
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Trang chúng tôi</a></li>
+                        <li class="relative"><a class="flex items-center py-[5px] text-[14px] leading-[1.5] text-black hover:transform hover:translate-x-[2px] transition-all duration-300 ease-in-out" href="#">Liên hệ</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu relative"><a class="text-[16px] text-white py-[15px] px-[20px] inline-block" href="#"> <span>Giới thiệu                               </span></a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="lg:hidden block bg-white">
+            <div class="custom-container mx-auto py-[10px] ">
+              <div class="flex justify-between items-center"> 
+                <ul class="mr-[24px]"> 
+                  <li class="menubar cursor-pointer"> <span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"> </span><span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"></span><span class="block h-[2px] w-[22px] rounded-[4px] bg-black my-[4px]"></span></li>
+                </ul>
+                <div> <a href="#"><img src="assets/images/logo-6.png" alt="" srcset=""></a></div>
+                <div> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-content-closer sidebar w-[300px] h-[100vh] bg-[#1A1A1A] p-[20px] fixed top-0 left-0 z-[9999] translate-x-[-100%] overflow-y-scroll transition-all duration-700 ease-in-out lg:block hidden">
+        <div> 
+          <div class="flex justify-end items-center"> <span class="close-side-widget h-[40px] w-[40px] flex justify-center items-center border-[2px] border-white rounded-[50%] text-[16px] text-white cursor-pointer hover:border-[#206C2C] hover:text-[#206C2C]">X</span></div>
+          <div>
+            <div class="pb-[30px]"><a href="#"><img src="assets/images/logo-white.png" alt="" srcset=""></a></div>
+            <div>
+              <h4 class="text-[22px] text-[#f7f7f7] font-[600] pb-[10px] mb-[30px] relative after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#206c2c] after:absolute after:top-[100%] after:left-0">Giới thiệu về chúng tôi</h4>
+              <div> 
+                <p class="text-white text-[15px]">Lorem Ipsum chỉ đơn giản là văn bản giả của ngành in ấn và sắp chữ. Lorem Ipsum đã là văn bản giả chuẩn của ngành kể từ những năm 1500, </p>
+              </div>
+            </div>
+            <div class="mt-[35px]">
+              <h4 class="text-[22px] text-[#f7f7f7] font-[600] pb-[10px] mb-[30px] relative after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#206c2c] after:absolute after:top-[100%] after:left-0">Hỗ trợ</h4>
+              <form action="#"> 
+                <div class="mb-[24px]">
+                  <input class="h-[50px] py-[10px] px-[25px] border outline-none" type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="mb-[24px]">
+                  <input class="h-[50px] py-[10px] px-[25px] border outline-none" type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="mb-[24px]">
+                  <textarea class="min-h-[150px] py-[10px] px-[25px] border outline-none w-[100%] resize-none" name="message" placeholder="Message..."> </textarea>
+                </div>
+                <div class="mb-[24px]">
+                  <button class="inline-block px-[30px] text-[14px] text-black bg-white font-[600] leading-[40px] uppercase relative z-[1] transition-all duration-500 ease-in-out before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[#F69C63] before:scale-x-0 before:origin-right before:z-[-1] before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:before:origin-left hover:text-white" type="submit"><span>Nộp ngay</span></button>
+                </div>
+              </form>
+            </div>
+            <div class="mt-[35px]">
+              <h4 class="text-[22px] text-[#f7f7f7] font-[600] pb-[10px] mb-[30px] relative after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#206c2c] after:absolute after:top-[100%] after:left-0">Thông tin liên lạc</h4>
+              <ul> 
+                <li class="mb-[12px] text-[#dadada] text-[15px]"> <span class="text-[#f69c63]"></span>New York, United States </li>
+                <li class="mb-[12px] text-[#dadada] text-[15px]"> <span class="text-[#f69c63]"></span>+44 123 456 789</li>
+                <li class="mb-[12px] text-[#dadada] text-[15px]"> <span class="text-[#f69c63]"></span>info@example.com </li>
+              </ul>
+            </div>
+            <div> 
+              <ul class="flex items-center pt-[10px]">
+                <li class="mr-[15px]"><a class="text-[15px] text-white h-[40px] w-[40px] rounded-[50%] bg-[#206C2C] flex justify-center items-center" href="#"> <i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="mr-[15px]"><a class="text-[15px] text-white h-[40px] w-[40px] rounded-[50%] bg-[#206C2C] flex justify-center items-center" href="#"> <i class="fa-brands fa-twitter"></i></a></li>
+                <li class="mr-[15px]"><a class="text-[15px] text-white h-[40px] w-[40px] rounded-[50%] bg-[#206C2C] flex justify-center items-center" href="#"> <i class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="mr-[15px]"><a class="text-[15px] text-white h-[40px] w-[40px] rounded-[50%] bg-[#206C2C] flex justify-center items-center" href="#"> <i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:block hidden h-[100vh] w-[calc(100%-300px)] bg-transparent fixed top-0 right-0 z-[9999] translate-x-[100%] sidebar-content ">                                           </div>
+    </header>
+    <footer class="footer bg-black"> 
+      <div class="lg:pt-[70px] pt-[30px] lg:pb-[88px] pb-[50px]">
+        <div class="custom-container mx-auto">
+          <div class="grid xl:grid-cols-4 grid-cols-2 gap-x-[24px] gap-y-[30px]">
+            <div>
+              <div>
+                <h4 class="text-[22px] text-white font-[600]">Giới thiệu về chúng tôi</h4>
+              </div>
+              <ul class="pt-[19px]">
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Chúng tôi là ai</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Làm việc với chúng tôi</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Trở thành nhà cung cấp</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Quan hệ nhà đầu tư</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Thiết bị của chúng tôi</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Chương trình liên kết</a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h4 class="text-[22px] text-white font-[600]">Liên kết hữu ích</h4>
+              </div>
+              <ul class="pt-[19px]">
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Liên hệ với chúng tôi</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Câu hỏi thường gặp</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Điều khoản & Điều kiện</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Chính sách trả hàng</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Hủy đơn hàng</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Theo dõi đơn hàng</a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h4 class="text-[22px] text-white font-[600]">Theo dõi chúng tôi trên</h4>
+              </div>
+              <ul class="pt-[19px]">
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#"> <span class="mr-[15px]"> <i class="fa-brands fa-facebook-f"></i></span><span>Facebook</span></a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#"> <span class="mr-[15px]"> <i class="fa-brands fa-twitter"></i></span><span>Twitter</span></a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#"><span class="mr-[15px]"> <i class="fa-brands fa-square-instagram"> </i></span><span>Instagram</span></a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#"> <span class="mr-[15px]"><i class="fa-brands fa-youtube"></i></span><span>Youtube</span></a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h4 class="text-[22px] text-white font-[600]">Mua sắm</h4>
+              </div>
+              <ul class="pt-[19px]">
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Mua sắm nam giới hợp thời trang</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Mua sắm nữ giới 2021</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Thẻ quà tặng & Phiếu giảm giá</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Trang chủ $ sống</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Thiết bị điện tử Tiện ích</a></li>
+                <li class="pb-[8px]"><a class="relative inline-block text-[#999999] text-[15px] after:content-[''] after:w-0 after:h-[1px] after:bg-[#fa323c] after:absolute after:top-[100%] after:left-0 after:transition-all after:duration-500 after:ease-linear after:hover:w-full hover:text-[#fa323c] transition-all duration-500 ease-linear" href="#">Thẻ quà tặng & Phiếu giảm giá</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-[20px] pb-[30px] border-t border-[#333333]">
+        <div class="custom-container">
+          <div class="flex justify-between items-center flex-wrap">     
+            <div> 
+              <p class="text-[14px] text-[#888888]">Bản quyền © 2022   <a class="inline-block text-[#ff5a00] hover:underline mr-[4px]" href="#">Karte.  </a>Mọi quyền được bảo lưu.   </p>
+            </div>
+            <ul class="flex md:pt-[0] pt-[10px]">
+              <li><a class="inline-block mr-[15px]" href="#"><img class="max-w-[65px] rounded-[5px]" src="assets/images/method-1.jpg" alt=""></a></li>
+              <li><a class="inline-block mr-[15px]" href="#"><img class="max-w-[65px] rounded-[5px]" src="assets/images/method-2.jpg" alt=""></a></li>
+              <li><a class="inline-block mr-[15px]" href="#"><img class="max-w-[65px] rounded-[5px]" src="assets/images/method-3.jpg" alt=""></a></li>
+              <li><a class="inline-block" href="#"><img class="max-w-[65px] rounded-[5px]" src="assets/images/method-4.jpg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

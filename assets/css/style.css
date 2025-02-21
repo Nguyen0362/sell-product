@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+    position: relative;
+}
+
+.custom-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media (min-width: 567px) {
+    .custom-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .custom-container {
+        max-width: 1320px;
+    }
+}
+
+/* header */
+.header-menu .sub-menu:hover>ul {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.header-menu .sub-menu ul li:hover>ul {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.header .sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+
+.header .sidebar::-webkit-scrollbar-thumb {
+    background-color: #1B5D26;
+}
+
+.header .sidebar::-webkit-scrollbar-track {
+    background-color: #4C4C4C;
+}
+
+.header .sidebar-content-closer.active{
+    transform: translateX(0);
+}
+
+.header .sidebar-content.active{
+    transform: translateX(0);
+}
+
+.header .sticy-header.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .menu-closer.active{
+    width: calc(100% - 300px);
+}
+
+.header .mobile-menu__sidebar-menu.active{
+    transform: translateX(0);
+}
+
+.header .sidebarMenu::-webkit-scrollbar {
+    width: 7px;
+}
+
+.header .sidebarMenu::-webkit-scrollbar-thumb {
+    background-color: #555555;
+}
+
+.header .sidebarMenu::-webkit-scrollbar-track {
+    background-color: #F49B62;
+}
+
+.header .mobile-menu__sidebar-menu .pages-dropdown-menu > li li a{
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 40px;
+    letter-spacing: 1px;
+}
+
+.header .mobile-menu__sidebar-menu .pages-dropdown-menu .dropdown li.subhed > a {
+    padding-left: 30px;
+}
+
+.header .mobile-menu__sidebar-menu .pages-dropdown-menu .dropdown li.subhed > a span {
+    font-weight: 600;
+    color: #000;
+}
+
+.header .mobile-menu__sidebar-menu .pages-dropdown-menu li.subhed ul li a {
+    padding-left: 40px;
+}
+
+/* End header */
+
+/* slide-area */
+.slide-area .button:hover{
+    background: black;
+    color: #ffffff;
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -2px);
+}
+/* End slide-area */
+
+/* area-finfo */
+.area-finfo .finfobox:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 30px 15px -15px;
+    transform: translate(0px, -2px);
+}
+/* End area-finfo */
+
+/* category-area */
+.category-area .button:hover{
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -2px);
+}
+/* End category-area */
+
+/* best-sheller-area */
+.best-sheller-area .icon a{
+    box-shadow: 0px 10px 20px 0px rgba(21, 24, 32, 0.1);
+}
+/* End best-sheller-area */
+
+/* discount */
+.discount-area .button:hover{
+    background: black;
+    color: #ffffff;
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -2px);
+}
+/* End discount */
