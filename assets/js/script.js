@@ -1,4 +1,6 @@
 // sidebar
+
+// menu sidebar
 const buttonMenubar = document.querySelectorAll(".header .menubar");
 if(buttonMenubar.length > 0){
     const sidebarContent = document.querySelector("header .sidebar-content-closer");
@@ -39,6 +41,34 @@ if(buttonMenubar.length > 0){
         });
     });
 }
+// End menu sidebar
+
+// cart sidebar
+const buttonCart = document.querySelectorAll(".header .cart");
+if(buttonCart.length > 0){
+    const sidebarCartCloser = document.querySelector("header .sidebar-cart-closer");
+    const sidebarCart = document.querySelector(".header .sidebar-cart"); 
+    const closeCartButton = document.querySelector(".header .close-cart-button");
+
+    buttonCart.forEach((button) => {
+        button.addEventListener("click", () => {
+            sidebarCartCloser.classList.add("active");
+            sidebarCart.classList.add("active");
+        })
+    });
+    
+    sidebarCartCloser.addEventListener("click", () => {
+        sidebarCartCloser.classList.remove("active");
+        sidebarCart.classList.remove("active");
+    })
+
+    closeCartButton.addEventListener("click", () => {
+        sidebarCartCloser.classList.remove("active");
+        sidebarCart.classList.remove("active");
+    })
+}
+// End cart sidebar
+
 // End sidebar
 
 // menu fixed
