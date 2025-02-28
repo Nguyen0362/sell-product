@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <title>Trang cửa hàng</title>
   </head>
   <body> 
     <header class="header"> <a class="scrollToTop inline-block bg-[#F79A3F] text-white leading-[45px] text-center cursor-pointer w-[45px] h-[45px] rounded-[5px] text-[20px] fixed bottom-0 z-[20] right-[30px] translate-y-[100%] transition-all duration-300 ease-in-out" href="#0"><i class="fa-solid fa-arrow-up"></i></a>
@@ -516,6 +517,149 @@
       <div class="lg:block hidden h-[100vh] w-[calc(100%-300px)] bg-transparent fixed top-0 right-0 z-[9999] translate-x-[100%] sidebar-content">                                           </div>
       <div class="h-[100vh] sm:w-[calc(100%-350px)] w-[calc(100%-300px)] bg-transparent fixed top-0 left-0 z-[9999] translate-x-[-100%] sidebar-cart-closer">                                           </div>
     </header>
+    <section class="bg-[url('assets/images/breadcum-bg.png')] py-[100px] bg-cover bg-center bg-no-repeat relative after:content-[''] after:w-full after:h-full after:bg-[#00000066] after:absolute after:top-0 after:left-0 after:z-[1]">
+      <div class="custom-container mx-auto h-[100%]">
+        <div class="text-center relative z-[9]">
+          <h2 class="lg:text-[48px] text-[36px] leading-[1.2] text-white font-[700] pb-[12px]">Cart</h2>
+          <div>
+            <ul class="flex justify-center">
+              <li class="px-[5px]"><a class="capitalize flex items-center text-[18px] text-white leading-[1.1] font-[500]" href="#"><i class="fa-solid fa-house pr-[8px]"></i>home</a></li>
+              <li class="px-[5px] text-[18px] text-white leading-[1.1] font-[500]"><i class="fa-solid fa-arrow-right"></i></li>
+              <li class="capitalize px-[5px] text-[18px] text-white leading-[1.1] font-[500]">cart </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cart-area py-[120px]">
+      <div class="custom-container mx-auto">
+        <div class="overflow-x-auto">
+          <table class="min-w-[992px] w-[100%]">
+            <thead class="border border-[#eeeeee]">
+              <tr> 
+                <th class="text-[15px] text-[#555555] font-[400] capitalize py-[18px] px-[30px] text-left">Tên sản phẩm </th>
+                <th class="text-[15px] text-[#555555] font-[400] capitalize py-[18px] px-[30px] text-left">Giá  </th>
+                <th class="text-[15px] text-[#555555] font-[400] capitalize py-[18px] px-[30px] text-left">Số lượng  </th>
+                <th class="text-[15px] text-[#555555] font-[400] capitalize py-[18px] px-[30px] text-left">Tổng cộng </th>
+                <th class="text-[15px] text-[#555555] font-[400] capitalize py-[18px] px-[30px] text-left"></th>
+              </tr>
+            </thead>
+            <tbody class="border-l border-r border-[#eeeeee]">
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-[30px]">
+                  <div class="flex items-center"><a class="max-w-[100px] inline-block" href="#"><img class="min-w-[100px] w-[100%] mr-[20px]" src="assets/images/cart-product-thumb-1.jpg" alt=""></a><a class="inline-block" href="#"> 
+                      <h5 class="text-[18px] font-[600] text-black pl-[20px] capitalize">Giày da </h5></a></div>
+                </td>
+                <td class="p-[30px] text-[16px] text-[#555555] uppercase">2.400.000vnđ </td>
+                <td class="p-[30px]">
+                  <div class="relative w-[160px] px-[50px] h-[50px] flex items-center border border-black"><span class="absolute top-0 left-0 h-full w-[50px] border-r border-[#e4e4e4] flex justify-center items-center hover:bg-primary hover:text-white cursor-pointer"><i class="fa-solid fa-minus"></i></span>
+                    <input class="text-[18px] text-black w-full pl-[20px] outline-none" type="number" value="1"><span class="absolute top-0 right-0 h-full w-[50px] border-l border-[#e4e4e4] flex justify-center items-center hover:bg-primary hover:text-white cursor-pointer"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                </td>
+                <td class="p-[30px] text-[16px] text-[#555555] uppercase">2.400.000vnđ</td>
+                <td class="text-[20px] cursor-pointer text-[#555555]"><i class="fa-solid fa-x"></i></td>
+              </tr>
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-[30px]">
+                  <div class="flex items-center"><a class="max-w-[100px] inline-block" href="#"><img class="min-w-[100px] w-[100%] mr-[20px]" src="assets/images/cart-product-thumb-1.jpg" alt=""></a><a class="inline-block" href="#"> 
+                      <h5 class="text-[18px] font-[600] text-black pl-[20px] capitalize">Giày da </h5></a></div>
+                </td>
+                <td class="p-[30px] text-[16px] text-[#555555] uppercase">2.400.000vnđ </td>
+                <td class="p-[30px]">
+                  <div class="relative w-[160px] px-[50px] h-[50px] flex items-center border border-black"><span class="absolute top-0 left-0 h-full w-[50px] border-r border-[#e4e4e4] flex justify-center items-center hover:bg-primary hover:text-white cursor-pointer"><i class="fa-solid fa-minus"></i></span>
+                    <input class="text-[18px] text-black w-full pl-[20px] outline-none" type="number" value="1"><span class="absolute top-0 right-0 h-full w-[50px] border-l border-[#e4e4e4] flex justify-center items-center hover:bg-primary hover:text-white cursor-pointer"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                </td>
+                <td class="p-[30px] text-[16px] text-[#555555] uppercase">2.400.000vnđ</td>
+                <td class="text-[20px] cursor-pointer text-[#555555]"><i class="fa-solid fa-x"></i></td>
+              </tr>
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-[30px]">
+                  <div class="flex items-center"><a class="max-w-[100px] inline-block" href="#"><img class="min-w-[100px] w-[100%] mr-[20px]" src="assets/images/cart-product-thumb-1.jpg" alt=""></a><a class="inline-block" href="#"> 
+                      <h5 class="text-[18px] font-[600] text-black pl-[20px] capitalize">Giày da </h5></a></div>
+                </td>
+                <td class="p-[30px] text-[16px] text-[#555555] uppercase">2.400.000vnđ </td>
+                <td class="p-[30px]">
+                  <div class="relative w-[160px] px-[50px] h-[50px] flex items-center border border-black"><span class="absolute top-0 left-0 h-full w-[50px] border-r border-[#e4e4e4] flex justify-center items-center hover:bg-primary hover:text-white cursor-pointer"><i class="fa-solid fa-minus"></i></span>
+                    <input class="text-[18px] text-black w-full pl-[20px] outline-none" type="number" value="1"><span class="absolute top-0 right-0 h-full w-[50px] border-l border-[#e4e4e4] flex justify-center items-center hover:bg-primary hover:text-white cursor-pointer"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                </td>
+                <td class="p-[30px] text-[16px] text-[#555555] uppercase">2.400.000vnđ</td>
+                <td class="text-[20px] cursor-pointer text-[#555555]"><i class="fa-solid fa-x"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex justify-between items-center flex-wrap">
+          <div class="flex items-center md:flex-nowrap flex-wrap">
+            <div class="mr-[30px] mt-[30px] w-[100%]">
+              <input class="h-[50px] min-w-[250px] w-[100%] border border-black text-[14px] text-gray-500 px-[20px] font-[300] cursor-pointer" type="text" name="coupon-code" placeholder="Mã Giảm Giá">
+            </div>
+            <div class="mt-[30px]">
+              <button class="inline-block px-[30px] min-w-[240px] text-[14px] text-white bg-black font-[600] leading-[40px] uppercase relative z-[1] transition-all duration-500 ease-in-out before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[#F69C63] before:scale-x-0 before:origin-right before:z-[-1] before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:before:origin-left hover:text-white" type="submit">áp dụng phiếu giảm giá</button>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <button class="inline-block lg:mr-[0] mr-[20px] xl:ml-[20px] ml-[0px] mt-[30px] px-[30px] text-[14px] text-black bg-white font-[600] leading-[40px] uppercase relative z-[1] border border-black transition-all duration-500 ease-in-out before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[#F69C63] before:scale-x-0 before:origin-right before:z-[-1] before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:before:origin-left hover:text-white hover:border-primary" type="submit">Tiếp tục mua sắm </button>
+            <button class="inline-block lg:ml-[20px] ml-[0px] mt-[30px] px-[30px] text-[14px] text-black bg-white font-[600] leading-[40px] uppercase relative z-[1] border border-black transition-all duration-500 ease-in-out before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[#F69C63] before:scale-x-0 before:origin-right before:z-[-1] before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:before:origin-left hover:text-white hover:border-primary" type="submit">Cập nhật giỏ hàng </button>
+          </div>
+        </div>
+        <div class="pt-[120px]">
+          <h3 class="lg:text-[30px] text-[28px] leading-[1.25] text-black font-[600] capitalize">Tổng số giỏ hàng </h3>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="xl:w-[50%] lg:w-[58%] w-[100%] px-[12px] mt-[30px] overflow-x-auto ">
+            <table>
+              <thead class="border border-[#eeeeee]">
+                <tr>
+                  <th class="md:py-[27px] md:px-[40px] p-[20px] text-[#555555] text-[15px] font-[400] capitalize text-left">Vận chuyển</th>
+                  <th class="md:py-[27px] md:px-[40px] p-[20px] text-[#555555] text-[15px] font-[400] uppercase text-left">3.000.000vnđ</th>
+                </tr>
+              </thead>
+              <tbody class="border-l border-r border-[#eeeeee]">
+                <tr class="border-b border-[#eeeeee]"> 
+                  <td class="md:py-[27px] md:px-[40px] p-[20px] text-[#555555] text-[15px] font-[400] capitalize text-left">Vận chuyển </td>
+                  <td class="md:py-[27px] md:px-[40px] p-[20px]">
+                    <ul class="shop-select-option">
+                      <li class="mb-[14px]">
+                        <input class="hidden" type="checkbox" name="free-shipping" id="option_1">
+                        <label class="text-[16px] text-[#555555] font-[500] cursor-pointer pl-[40px] leading-[30px] flex relative capitalize" for="option_1"> <span class="absolute top-[6px] left-0 w-[16px] h-[16px] border border-[#1a1a1a] bg-transparent rounded-[50%] before:content-[''] before:absolute before:top-[4px] before:right-[4px] before:bottom-[4px] before:left-[4px] before:bg-[#1a1a1a] before:rounded-[50%] before:opacity-0 before:transition-all before:duration-300 before:ease-linear"></span>miễn phí vận chuyển  </label>
+                      </li>
+                      <li class="mb-[14px]">
+                        <input class="hidden" type="checkbox" name="free-shipping" id="option_2">
+                        <label class="text-[16px] text-[#555555] font-[500] cursor-pointer pl-[40px] leading-[30px] flex relative capitalize" for="option_2"><span class="absolute top-[6px] left-0 w-[16px] h-[16px] border border-[#1a1a1a] bg-transparent rounded-[50%] before:content-[''] before:absolute before:top-[4px] before:right-[4px] before:bottom-[4px] before:left-[4px] before:bg-[#1a1a1a] before:rounded-[50%] before:opacity-0 before:transition-all before:duration-300 before:ease-linear"></span>tỉ lệ cố định   </label>
+                      </li>
+                      <li class="mb-[14px]">
+                        <input class="hidden" type="checkbox" name="free-shipping" id="option_3">
+                        <label class="text-[16px] text-[#555555] font-[500] cursor-pointer pl-[40px] leading-[30px] flex relative capitalize" for="option_3"><span class="absolute top-[6px] left-0 w-[16px] h-[16px] border border-[#1a1a1a] bg-transparent rounded-[50%] before:content-[''] before:absolute before:top-[4px] before:right-[4px] before:bottom-[4px] before:left-[4px] before:bg-[#1a1a1a] before:rounded-[50%] before:opacity-0 before:transition-all before:duration-300 before:ease-linear"></span>nhận hàng tại địa phương   </label>
+                      </li>
+                    </ul>
+                    <div class="pt-[16px] pb-[10px]">
+                      <p class="tetx-[14px] font-[300] text-[#555555]">Tùy chọn vận chuyển sẽ được cập nhật trong quá trình thanh toán</p>
+                    </div>
+                    <h4 class="text-[16px] font-[500] text-black">Tính toán vận chuyển</h4>
+                  </td>
+                </tr>
+                <tr class="border-b border-[#eeeeee]">
+                  <td class="md:py-[27px] md:px-[40px] p-[20px] text-[#555555] text-[15px] font-[400] capitalize text-left">Tổng cộng </td>
+                  <td class="md:pt-[24px] md:pb-[30px] md:px-[40px] p-[20px] text-black text-[16px] font-[500] uppercase text-left">3.000.000vnđ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="xl:w-[50%] lg:w-[42%] w-[100%] px-[12px] mt-[30px]">
+            <div class="border border-[#eeeeee] p-[40px]">
+              <h3 class="text-[24px] leading-[34px] capitalize">Kiểm tra </h3>
+              <ul class="mt-[17px]">
+                <li class="flex justify-between text-[#555555] text-[15px] font-[400] capitalize mb-[11px]"><span class="text-left">tổng cộng</span><span class="text-right">3.000.000vnđ          </span></li>
+                <li class="flex justify-between items-center text-[#555555] text-[15px] font-[400] capitalize mb-[11px]"><span class="text-left">vận chuyển</span><span class="text-right uppercase">1.300.000vnđ        </span></li>
+                <li class="border-t border-[#eeeeee] pt-[15px] flex justify-between"><span class="text-[16px] text-black font-[500] capitalize text-left">tổng giá:</span><span class="text-[18px] font-[500] text-primary text-right">4.300.000vnđ          </span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer bg-black"> 
       <div class="lg:pt-[70px] pt-[30px] lg:pb-[88px] pb-[50px]">
         <div class="custom-container mx-auto">

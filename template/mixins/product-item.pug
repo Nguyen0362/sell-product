@@ -1,0 +1,40 @@
+mixin product-item(badge, img1, img2, title, newPrice, oldPrice)
+    div(class="group")
+        div(class="relative before:content-[''] before:h-[1px] before:bg-white before:absolute before:top-[calc(50%+30px)] before:right-0 before:w-[0] before:z-[3] group-hover:before:w-[60%] before:transition-all before:duration-500 before:ease-linear after:content-[''] after:w-0 group-hover:after:w-[60%] after:h-[1px] after:bg-white after:absolute after:top-[calc(50%-30px)] after:left-0 after:transition-all after:duration-500 after:ease-linear after:z-[0]")
+            div(class="absolute sm:right-[16px] right-[7px] sm:top-[16px] top-[7px] z-[10]")
+                span(class="sm:text-[11px] text-[10px] text-white bg-[#5bc25e] font-[400] rounded-[50px] uppercase inline-block tracking-[0.7px] whitespace-normal px-[7px] leading-[18px]") #{badge}
+            a(href="#")
+                img(src=img1, alt="" class="min-w-full h-full object-cover opacity-100 visible transition-all duration-500 ease-linear " + (img2 ? "group-hover:opacity-0 group-hover:invisible" : "")) 
+                img(src=img2, alt="" class="absolute top-0 left-0 min-w-full h-full object-cover opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-linear") 
+            div(class="lg:block hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ease-linear z-[2] opacity-0 group-hover:opacity-[1]")  
+                ul(class="flex") 
+                    li(class="icon relative") 
+                        a(href="#" class="group/item h-[30px] w-[30px] text-[12px] text-black rounded-[30px] m-[2px] bg-white flex justify-center items-center hover:bg-[#FE5A00] hover:text-white transition-all duration-500 ease-linear")
+                            i(class="fa-regular fa-eye")
+                            span(class="uppercase text-[10px] text-[400] text-center bg-black min-w-[75px] py-[4px] px-[8px] inline-block text-white absolute top-[-23px] left-[50%] translate-x-[-50%] translate-y-[-15px] opacity-0 invisible group-hover/item:opacity-[1] group-hover/item:translate-y-[-5px] group-hover/item:visible transition-all duration-500 ease-lineartbefore:content-[''] before:w-[8px] before:h-[8px] before:bg-black before:absolute before:left-[50%] before:top-[80%] before:translate-y-0 before:translate-x-[-50%] before:rotate-[45deg]") quick view
+                    li(class="icon relative") 
+                        a(href="#" class="group/item h-[30px] w-[30px] text-[12px] text-black rounded-[30px] m-[2px] bg-white flex justify-center items-center hover:bg-[#FE5A00] hover:text-white transition-all duration-500 ease-linear")
+                            i(class="fa-regular fa-heart") 
+                            span(class="uppercase text-[10px] text-[400] text-center bg-black min-w-[75px] py-[4px] px-[8px] inline-block text-white absolute top-[-23px] left-[50%] translate-x-[-50%] translate-y-[-15px] opacity-0 invisible group-hover/item:opacity-[1] group-hover/item:translate-y-[-5px] group-hover/item:visible transition-all duration-500 ease-lineartbefore:content-[''] before:w-[8px] before:h-[8px] before:bg-black before:absolute before:left-[50%] before:top-[80%] before:translate-y-0 before:translate-x-[-50%] before:rotate-[45deg]") wishlist      
+                    li(class="icon relative") 
+                        a(href="#" class="group/item h-[30px] w-[30px] text-[12px] text-black rounded-[30px] m-[2px] bg-white flex justify-center items-center hover:bg-[#FE5A00] hover:text-white transition-all duration-500 ease-linear")
+                            i(class="fa-solid fa-cart-shopping") 
+                            span(class="uppercase text-[10px] text-[400] text-center bg-black min-w-[75px] py-[4px] px-[8px] inline-block text-white absolute top-[-23px] left-[50%] translate-x-[-50%] translate-y-[-15px] opacity-0 invisible group-hover/item:opacity-[1] group-hover/item:translate-y-[-5px] group-hover/item:visible transition-all duration-500 ease-lineartbefore:content-[''] before:w-[8px] before:h-[8px] before:bg-black before:absolute before:left-[50%] before:top-[80%] before:translate-y-0 before:translate-x-[-50%] before:rotate-[45deg]") cart      
+                    li(class="icon relative") 
+                        a(href="#" class="group/item h-[30px] w-[30px] text-[12px] text-black rounded-[30px] m-[2px] bg-white flex justify-center items-center hover:bg-[#FE5A00] hover:text-white transition-all duration-500 ease-linear")
+                            i(class="fa-solid fa-arrows-rotate") 
+                            span(class="uppercase text-[10px] text-[400] text-center bg-black min-w-[75px] py-[4px] px-[8px] inline-block text-white absolute top-[-23px] left-[50%] translate-x-[-50%] translate-y-[-15px] opacity-0 invisible group-hover/item:opacity-[1] group-hover/item:translate-y-[-5px] group-hover/item:visible transition-all duration-500 ease-lineartbefore:content-[''] before:w-[8px] before:h-[8px] before:bg-black before:absolute before:left-[50%] before:top-[80%] before:translate-y-0 before:translate-x-[-50%] before:rotate-[45deg]") compare      
+        div(class="text-center")
+            div(class="pt-[12px] sm:text-[14px] text-[11px] text-[#FF5A00]")
+                i(class="fa-solid fa-star")                              
+                i(class="fa-solid fa-star")                              
+                i(class="fa-solid fa-star")                              
+                i(class="fa-solid fa-star")                              
+                i(class="fa-solid fa-star text-[#B0B5BB]")     
+            h5(class="pt-[4px] pb-[5px]")       
+                a(href="#" class="text-[14px] font-[400] transition-all duration-500 ease-linear text-black hover:text-[#fa323c]") #{title}
+            div(class="flex text-[14px] justify-center")
+                p(class="pr-[10px] font-[600]") #{newPrice}
+                if(oldPrice)
+                    span(class="text-[#888888]") 
+                        del(class="") #{oldPrice}

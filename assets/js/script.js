@@ -79,11 +79,9 @@ if(header){
     let menuOffset = header.offsetHeight;
     window.addEventListener("resize", ()=>{
         menuOffset = header.offsetHeight;
-        console.log(menuOffset);
     });
     
     window.addEventListener("scroll", function () {
-        console.log(window.scrollY);
         if (window.scrollY > menuOffset) {
             sticyHeader.classList.add("active", "animate__animated", "animate__fadeInDown");
             scrollToTop.classList.add("bottom-[30px]", "translate-y-[0]");
@@ -144,7 +142,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-var swiper = new Swiper(".bestSellerSwiper", {
+var bestSellerSwiper = new Swiper(".bestSellerSwiper", {
     loop: true,
     autoplay: {
         delay: 2000,
@@ -168,12 +166,51 @@ var swiper = new Swiper(".bestSellerSwiper", {
     },
 });
 
-document.querySelector(".swiper").addEventListener("mouseenter", function () {
-    swiper.autoplay.stop();
-});
+const eventSwiper = document.querySelector(".mySwiper");
 
-// Tiếp tục autoplay khi rời chuột
-document.querySelector(".swiper").addEventListener("mouseleave", function () {
-    swiper.autoplay.start();
-});
+if(eventSwiper){
+    console.log("chay")
+    eventSwiper.addEventListener("mouseenter", function () {
+        swiper.autoplay.stop();
+    });
+
+    eventSwiper.addEventListener("mouseleave", function () {
+        swiper.autoplay.start();
+    });
+}
+
 // End swiper
+
+// select
+
+const niceSelect = document.querySelector(".product-grid");
+
+if(niceSelect){
+    const list = niceSelect.querySelector("ul");
+    const icon = niceSelect.querySelector(".icon");
+    console.log(icon)
+    
+    niceSelect.addEventListener("click", ()=>{
+        list.classList.toggle("open");
+        icon.classList.toggle("rotate");
+    });
+}
+
+
+// End select
+
+// Pagination
+const buttonPagination = document.querySelectorAll(".product-grid .pagination a");
+if(buttonPagination.length > 0){
+    buttonPagination.forEach(button => {
+        button.addEventListener("click", () => {
+            buttonPagination.forEach((element) => {
+                if(element.classList.contains("active")){
+                    element.classList.remove("active");
+                }
+            })
+            button.classList.add("active")
+        })
+    })
+}
+// End Pagination

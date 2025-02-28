@@ -190,3 +190,27 @@ body {
     transform: translate(0px, -2px);
 }
 /* End discount */
+
+/* product grid */
+.product-grid .nice-select ul.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.product-grid .nice-select .icon.rotate{
+    transform: rotate(-180deg);
+}
+
+.product-grid .pagination li a.active{
+    background-color: #F69C63;
+    color: white;
+    border: 1px solid #F69C63;
+}
+/* End product grid */
+
+/* cart */
+.cart-area .shop-select-option input[type=checkbox]:checked+label span::before{
+    opacity: 1;
+}
+/* End cart */

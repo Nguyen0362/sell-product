@@ -1,0 +1,207 @@
+extends layouts/default.pug 
+include mixins/product-item.pug
+
+block title 
+    title Trang cửa hàng
+block main
+    section(class="bg-[url('assets/images/breadcum-bg.png')] py-[100px] bg-cover bg-center bg-no-repeat relative after:content-[''] after:w-full after:h-full after:bg-[#00000066] after:absolute after:top-0 after:left-0 after:z-[1]")
+        div(class="custom-container mx-auto h-[100%]")
+            div(class="text-center relative z-[9] pb-[60px]")
+                h2(class="lg:text-[48px] text-[36px] leading-[1.2] text-white font-[700] pb-[12px]") Shop Grid
+                div(class="")
+                    ul(class="flex justify-center")
+                        li(class="px-[5px]")
+                            a(href="#" class="capitalize flex items-center text-[18px] text-white leading-[1.1] font-[500]")
+                               i(class="fa-solid fa-house pr-[8px]")
+                               |home
+                        li(class="px-[5px] text-[18px] text-white leading-[1.1] font-[500]")
+                            i(class="fa-solid fa-arrow-right")
+                        li(class="capitalize px-[5px] text-[18px] text-white leading-[1.1] font-[500]")
+                            |shop 
+    section(class="mt-[-80px] relative z-[9]")
+        div(class="custom-container mx-auto")
+            div(class="")
+                ul(class="flex justify-around flex-wrap")
+                    li(class="group px-[17px] inline-block")
+                        a(href="#" class="p-[15px] rounded-[50%] bg-white inline-block")
+                            div(class="flex justify-center items-center border border-[#e4e4e4] group-hover:border-primary w-[150px] h-[150px] rounded-[50%] transition-all duration-300 ease-linear overflow-hidden")
+                                img(src="assets/images/product-categories-v1-img2.png", alt="" class="group-hover:scale-[1.1] transition-all duration-300 ease-linear") 
+                        div(class="mt-[10px]")
+                            a(href="#")
+                                h6(class="text-black text-[16px] font-[600] uppercase transition-all duration-300 ease-linear text-center group-hover:text-primary")
+                                    |Accessories 
+                    li(class="group px-[17px] inline-block")
+                        a(href="#" class="p-[15px] rounded-[50%] bg-white inline-block")
+                            div(class="flex justify-center items-center border border-[#e4e4e4] group-hover:border-primary w-[150px] h-[150px] rounded-[50%] transition-all duration-300 ease-linear overflow-hidden")
+                                img(src="assets/images/product-categories-v1-img2.png", alt="" class="group-hover:scale-[1.1] transition-all duration-300 ease-linear") 
+                        div(class="mt-[10px]")
+                            a(href="#")
+                                h6(class="text-black text-[16px] font-[600] uppercase transition-all duration-300 ease-linear text-center group-hover:text-primary")
+                                    |Accessories 
+                    li(class="group px-[17px] inline-block")
+                        a(href="#" class="p-[15px] rounded-[50%] bg-white inline-block")
+                            div(class="flex justify-center items-center border border-[#e4e4e4] group-hover:border-primary w-[150px] h-[150px] rounded-[50%] transition-all duration-300 ease-linear overflow-hidden")
+                                img(src="assets/images/product-categories-v1-img2.png", alt="" class="group-hover:scale-[1.1] transition-all duration-300 ease-linear") 
+                        div(class="mt-[10px]")
+                            a(href="#")
+                                h6(class="text-black text-[16px] font-[600] uppercase transition-all duration-300 ease-linear text-center group-hover:text-primary")
+                                    |Accessories 
+                    li(class="group px-[17px] inline-block")
+                        a(href="#" class="p-[15px] rounded-[50%] bg-white inline-block")
+                            div(class="flex justify-center items-center border border-[#e4e4e4] group-hover:border-primary w-[150px] h-[150px] rounded-[50%] transition-all duration-300 ease-linear overflow-hidden")
+                                img(src="assets/images/product-categories-v1-img2.png", alt="" class="group-hover:scale-[1.1] transition-all duration-300 ease-linear") 
+                        div(class="mt-[10px]")
+                            a(href="#")
+                                h6(class="text-black text-[16px] font-[600] uppercase transition-all duration-300 ease-linear text-center group-hover:text-primary")
+                                    |Accessories 
+                    li(class="group px-[17px] inline-block")
+                        a(href="#" class="p-[15px] rounded-[50%] bg-white inline-block")
+                            div(class="flex justify-center items-center border border-[#e4e4e4] group-hover:border-primary w-[150px] h-[150px] rounded-[50%] transition-all duration-300 ease-linear overflow-hidden")
+                                img(src="assets/images/product-categories-v1-img2.png", alt="" class="group-hover:scale-[1.1] transition-all duration-300 ease-linear") 
+                        div(class="mt-[10px]")
+                            a(href="#")
+                                h6(class="text-black text-[16px] font-[600] uppercase transition-all duration-300 ease-linear text-center group-hover:text-primary")
+                                    |Accessories                 
+    section(class="product-grid pt-[60px] pb-[120px]")
+        div(class="custom-container mx-auto")  
+            div(class="flex flex-wrap sm:justify-between justify-center items-center pb-[30px]")
+                div(class="")
+                    p(class="text-[#555555] mt-[10px] mr-[10px]")
+                        |Hiển thị 1–12 trong số 50 kết quả 
+                div(class="mt-[10px] w-[200px]")
+                    select(name="" class="hidden") 
+                        option(value="1") Bán chạy nhất
+                        option(value="1") Theo thứ tự chữ cái, A-Z
+                        option(value="1") Theo thứ tự chữ cái, Z-A
+                        option(value="1") Giá, thấp đến cao
+                        option(value="1") Giá, cao đến thấp
+                    div(class="nice-select relative pl-[20px] pr-[20px] h-[50px] bg-[#ffffff] leading-[48px] text-[14px] text-[#888888] font-[300] border border-[#e4e4e4] cursor-pointer")
+                        div(class="flex justify-between")
+                            span(class="") Bán chạy nhất
+                            span(class="icon transition-all duration-200 ease-out") 
+                                i(class="fa-solid fa-angle-down") 
+                        ul(class="bg-[#fff] border border-[#e4e4e4] absolute top-[100%] left-0 right-0 z-[9] mt-[4px] scale-[0.75] translate-y-[-21px] text-left invisible opacity-0" style="transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;")
+                            li(value="1" tabindex="0"  class="font-[400] pl-[18px] pr-[29px] cursor-pointer leading-[40px] focus:bg-[#f6f6f6] focus:font-bold transition-all duration-200") Bán chạy nhất
+                            li(value="1" tabindex="0"  class="font-[400] pl-[18px] pr-[29px] cursor-pointer leading-[40px] focus:bg-[#f6f6f6] focus:font-bold transition-all duration-200") Theo thứ tự chữ cái, A-Z
+                            li(value="1" tabindex="0"  class="font-[400] pl-[18px] pr-[29px] cursor-pointer leading-[40px] focus:bg-[#f6f6f6] focus:font-bold transition-all duration-200") Theo thứ tự chữ cái, Z-A
+                            li(value="1" tabindex="0"  class="font-[400] pl-[18px] pr-[29px] cursor-pointer leading-[40px] focus:bg-[#f6f6f6] focus:font-bold transition-all duration-200") Giá, thấp đến cao
+                            li(value="1" tabindex="0"  class="font-[400] pl-[18px] pr-[29px] cursor-pointer leading-[40px] focus:bg-[#f6f6f6] focus:font-bold transition-all duration-200") Giá, cao đến thấp
+            div(class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-[24px]")
+                +product-item(
+                    "",
+                    "assets/images/productss-3.png",
+                    "",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    ""
+                )
+                +product-item(
+                    "new",
+                    "assets/images/productss-3.png",
+                    "assets/images/product-3.png",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    "$200"
+                )
+                +product-item(
+                    "",
+                    "assets/images/productss-3.png",
+                    "",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    ""
+                )
+                +product-item(
+                    "new",
+                    "assets/images/productss-3.png",
+                    "assets/images/product-3.png",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    "$200"
+                )
+                +product-item(
+                    "",
+                    "assets/images/productss-3.png",
+                    "",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    ""
+                )
+                +product-item(
+                    "new",
+                    "assets/images/productss-3.png",
+                    "assets/images/product-3.png",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    "$200"
+                )
+                +product-item(
+                    "",
+                    "assets/images/productss-3.png",
+                    "",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    ""
+                )
+                +product-item(
+                    "new",
+                    "assets/images/productss-3.png",
+                    "assets/images/product-3.png",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    "$200"
+                )
+                +product-item(
+                    "",
+                    "assets/images/productss-3.png",
+                    "",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    ""
+                )
+                +product-item(
+                    "new",
+                    "assets/images/productss-3.png",
+                    "assets/images/product-3.png",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    "$200"
+                )
+                +product-item(
+                    "",
+                    "assets/images/productss-3.png",
+                    "",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    ""
+                )
+                +product-item(
+                    "new",
+                    "assets/images/productss-3.png",
+                    "assets/images/product-3.png",
+                    "Ladies summer silk dresses",
+                    "$160",
+                    "$200"
+                )
+            div(class="pt-[50px]")
+                ul(class="pagination flex justify-center items-center")
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear") 
+                            i(class="fa-solid fa-angles-left")  
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear active") 1 
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear") 2 
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear") 3 
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear") ...  
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear") 10
+                    li(class="")
+                        a(href="#0" class="md:w-[50px] w-[30px] md:h-[50px] h-[30px] md:text-[16px] text-[12px] text-[#555555] bg-transparent mx-[5px] border border-[#eeeeee] rounded-[50%] flex justify-center items-center leading-[1.1] hover:bg-primary hover:text-white transition-all duration-300 ease-linear") 
+                            i(class="fa-solid fa-angle-right")  
+                    
+
+                
+          
